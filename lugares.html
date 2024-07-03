@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">  <img src="imagem/logo.png" alt=""></a>
-          <div>
-             <a href="lugares.html"> <h5>Lugares</h3></a>
-              <a href="cardapio-torresmo.html"><h5>Cardápios</h3></a>
-                  <a href="contato.html"><h5>Fale conosco</h3></a>
-          </div>
-      </nav>
-<section>
+        <a href="index.html"><img src="imagem/logo.png" alt=""></a>
+        <div class="nav-links">
+            <a href="lugares.html">Lugares</a>
+            <a href="cardapio-torresmo.html">Cardápios</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+    </nav>
+<section class="section-lugares">
 <div class="texto-lugares">
     <h1>A cara da rua</h1>
 </div>
 
 <div class="container-lugar">
+    <div class="descricao-nome"> Batata de marechal  - Rio de Janeiro/RJ</div>
     <div class="descricao-lugar">
 <p>Uma batata frita que já se tornou um verdadeiro patrimônio do subúrbio carioca. Foi em Marechal Hermes, primeiro bairro operário do Brasil — projetado e inaugurado no início do século 19 pelo presidente de mesmo nome — que Ademar instalou sua barraca há mais de 30 anos. Pertinho da estação de trem, oferecia hambúrguer, cachorro quente etc., mas deixou tudo de lado para vender só batatas fritas. A ideia de incrementar as porções com frango à passarinho, bacon e calabresa,
      e servir até 3 quilos em cada sacola (ele nunca coloca menos de 2,5 quilos!) 
@@ -31,17 +37,26 @@
        quem venha de fora da cidade e outros bairros do Rio só para provar. “O segredo é a qualidade da batata.
         A minha é de semente holandesa, bem seca”, revela. Nestes tempos em que a batata congelada estende cada ve
         z mais seus domínios pelos restaurantes, Ademar resiste e cresce a cada dia.</p>
+        <div class="sub-lugar">
+            <div class="rei-fimdapagina"><h4>Localização</h4></div>
+            <p>João Vicente, 1543 – Marechal Hermes</p>
+            <div class="rei-fimdapagina"><h4>Horário de Funcionamento:</h4></div>
+            <p>Todos os dias: 16:00 – 00:00</p>
+        </div>
 
     </div>
     <div class="img-lugar">
 <img src="imagem/image 29.png" alt="">
 </div>
 
-<a href="cardapio-batata.html"> <button> Quero provar!</button></a>
+<a href="cardapio-batata.html" class="quero"> <button> Quero provar!</button></a>
+
 </div>
 
+<div class="imagelinha"><img src="imagem/Group 5.png" alt=""></div>
 
 <div class="container-lugar">
+    <div class="descricao-nome"> Cachorro quente do Oliveira  - Rio de Janeiro/RJ</div>
     <div class="descricao-lugar">
 <p>Oliveira Ferreira da Silva jura ter sido o pioneiro na utilização do milho, da ervilha e da batata palha no cachorro quente. Esta última, garante o homem-sobrenome, teria sido invenção sua, nos anos oitenta: “Eu fazia sucesso com aquela batata chips quebrada em cima da salsicha e toda 
     a concorrência imitou. Para dar conta da demanda, a fábrica criou a versão palha”. 
@@ -51,31 +66,43 @@
       há quase trinta anos. “Tinha tanta gente na rua em frente que os ônibus não conseguiam passar. Viramos notícia de jornal”, conta.
        Quando a frequência do botequim diminuiu, apostou no cachorro quente: “Percebi uma nova oportunidade de mercado em 1985.
         Foi a grande sacada da minha vida”.</p>
+        <div class="sub-lugar">
+            <div class="rei-fimdapagina"><h4>Localização:</h4></div>
+            <p>Rua do Humaitá, S/N - (canteiro central, em frente ao nº 110) - Humaitá - Rio de Janeiro</p>
+            <div class="rei-fimdapagina"><h4>Horário de Funcionamento:</h4></div>
+            <p>Quinta a domingo: 18:00 – 03:00</p>
+        </div>
 
     </div>
     <div class="img-lugar">
 <img src="imagem/OLIVEIRA 1.png" alt="">
 </div>
 
-<a href="cardapio-hotdog.html"> <button> Quero provar!</button></a>
+<a href="cardapio-batata.html" class="quero"> <button> Quero provar!</button></a>
 </div>
 
-
+<div class="imagelinha"><img src="imagem/Group 5.png" alt=""></div>
 
 
 <div class="container-lugar">
+    <div class="descricao-nome"> Rei do torresmo - Belo Horizonte MG</div>
     <div class="descricao-lugar">
 <p>O estabelecimento está localizado no histórico Mercado Central e, naturalmente, exala uma atmosfera rica em tradição cultural e variedade. 
     A casa é conhecida por servir o delicioso torresmo de barriga acompanhado de farofa. Além dessa especialidade, 
     o bar disponibiliza uma seleção diversificada de petiscos típicos da cultura de boteco.</p>
-
+    <div class="sub-lugar">
+        <div class="rei-fimdapagina"><h4>Localização:</h4></div>
+        <p>Av. Augusto de Lima, 744 - Loja 166 - Centro, Belo Horizonte - MG, 30190-922</p>
+        <div class="rei-fimdapagina"><h4>Horário de Funcionamento:</h4></div>
+        <p>Segunda a domingo: 8:00 – 15:00</p>
     </div>
-    <div class="img-lugar">
+    </div>
+    <div class="img-lugar torresmo">
         <img src="imagem/rei-do-torresmo-1-1.jpg" alt="">
-        <a href="cardapio-torresmo"> <button> Quero provar!</button></a>
+        <a href="cardapio-batata.html" class="quero"> <button> Quero provar!</button></a>
 </div>
 
-<button> Quero provar!</button>
+
 </div>
 
 

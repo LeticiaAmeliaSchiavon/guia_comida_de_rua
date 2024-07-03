@@ -3,40 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-<nav>
-  <a href="index.html">  <img src="imagem/logo.png" alt=""></a>
-    <div>
-       <a href="lugares.html"> <h5>Lugares</h3></a>
-        <a href="cardapio-torresmo.html"><h5>Cardápios</h3></a>
-            <a href="contato.html"><h5>Fale conosco</h3></a>
-    </div>
-</nav>
+    <nav>
+        <a href="index.html"><img src="imagem/logo.png" alt=""></a>
+        <div class="nav-links">
+            <a href="lugares.html">Lugares</a>
+            <a href="cardapio-torresmo.html">Cardápios</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+    </nav>
+
 <section class="intro">
-
+<div class="img-intro"> <img src="imagem/Group 2.png" alt=""></div>
     <div class="texto-introdução">
-<h1>Dicas e sugestões para você provar comidas de rua típicas de lugares do Brasil!</h1>
+<h4>A comida de rua está nas esquinas, calçadas, praças e largos. Povoa a memória, estabelece encontros,
+     resiste aos esforços de ordem, controle e padronização que se apresentam sobre a cidade.
+      Ela está nos carrinhos, tabuleiros, bicicletas, bancas e cestos.
+       Em pontos fixos dos bairros onde pode ser encontrada cotidianamente, ou com vendedores 
+       ambulantes que tangenciam o caminho dos passantes. Tem comida de rua pra qualquer hora do dia. 
+       Seja para um café da manhã reforçado, para merenda (lanches ao longo do dia), 
+       para almoço ou para matar a fome no meio da madrugada. A diversidade é enorme. As delícias são muitas.
+        Um universo inteiro a ser experimentado.</h4>
 
     </div>
+<div class="imagens-row"> 
+<img src="imagem/image 60.png" alt="">
+<img src="imagem/image 61.png" alt="">
+<img src="imagem/image 62.png" alt="">
 
+</div>
+
+<div class="texto-introdução">
+
+<h4>Este guia não pretende nem de longe tentar esgotar o tema da comida de rua, 
+    mas sim reunir neste pequeno impresso uma amostra de toda a variedade que se 
+    pode encontrar percorrendo a cidade</h4>
+
+</div>
 
 </section>
 
 <section class="Destaque">
-<div class="textoDestaque">
-    <h2>Destaque da Semana!</h2>
-<a href="lugares.html"> <h3> Batata de Marechal</h3></a>
-<h3> Uma batata frita que já se tornou um verdadeiro patrimônio do subúrbio carioca</h3>
-<img src="imagem/batatademarechal.png" alt="Batata de Marechal/ Fonte: Jornal Extra">
-<img src="imagem/batata-logo.png" alt="">
-</div>
+    <div class="container">
+        <div class="row destaque-itens">
+            <div class="col-md-8 textoDestaque">
+                <h2>Destaque da Semana!</h2>
+                <a href="lugares.html"><h3>Batata de Marechal</h3></a>
+                <h4>Uma batata frita que já se tornou um verdadeiro patrimônio do subúrbio carioca</h4>
+            </div>
+            <div class="col-md-4 batata-destaque">
+                <img src="imagem/batatademarechal.png" alt="Batata de Marechal/ Fonte: Jornal Extra" class="img-fluid">
+            </div>
+            <div class="col-12 text-center my-3">
+                <img src="imagem/batata-logo.png" alt="" class="img-fluid destaque-logo">
+            </div>
+        </div>
+    </div>
 </section>
-<section>
-<div>
+
+
+
+<section class="indexlugares">
+    <div class="container">
+      
+<div class="lugarestext">
 <h2>Lugares</h2>
-<div>
+</div>
+<div class="lugares-todo row">
+<div class="lugares-cont col-md-4">
 <img src="imagem/marechal.png" alt="">
 <div>
     <a href="lugares.html"><h3>Batata de Marechal</h3></a>
@@ -44,15 +87,15 @@
 </div>
 </div>
 
-<div>
+<div class="lugares-cont col-md-4">
 <img src="imagem/cachorro-oliveira.png" alt="">
-<div>
+<div >
     <a href="lugares.html"><h3>Cachorro quente Oliveira</h3></a> 
     <h5> Oliveira Ferreira da Silva jura ter sido o pioneiro na utilizição do milho, da ervilha e da batata palha no chorro quente</h5>
 </div>
  </div>
 
-<div>
+ <div class="lugares-cont col-md-4">
 <img src="imagem/rei-do-torresmo.png" alt="">
 <div>
     <a href="lugares.html"><h3>Rei do torresmo</h3></a>
@@ -64,17 +107,20 @@
 
 
 </div>
+</div>
 </section>
+</section class=>
 
 
 <section class="tipos">
 
-    <div>
+    <div class="container">
+
 <div class="texto-tipos"> 
 <h2>Tipos de pratos</h2>
 </div>
-
-<div class="container-tipo">
+<div class="tipo-todo row"> 
+<div class="container-tipo col-md-3">
     <div>
 <img src="imagem/cachorro-png.png" alt="">
 <h3> Cachorro Quente</h3>
@@ -83,7 +129,7 @@
 
 </div>
 
-<div class="container-tipo">
+<div class="container-tipo col-md-3">
     <div>
 <img src="imagem/hamburger-png.png" alt="">
 <h3> Hambúrger</h3>
@@ -92,27 +138,48 @@
 
 </div>
 
-<div class="container-tipo">
+<div class="container-tipo col-md-3">
 <img src="imagem/batata-logo.png" alt="">
 <h3>Batata frita</h3>
 </div>
 
 
 
-</div>
 
-<div class="container-tipo">
+
+<div class="container-tipo col-md-3">
 <img src="imagem/image 28.png" alt="">
-<h3>Batata frita</h3>
+<h3>Espetinho</h3>
 </div>
-
-
+</div>
+</div>
 </section>
 
-<section>
+
+
+
+
+
+
+
+
+
+<section class="rei-fimdapagina">
 <h3>Rei do torresmo</h2>
 
-<h4>Avaliação</h4>
+
+
+<div class="container">
+    <h4>Avaliação</h4>
+	<div class="star-group">
+		<input type="radio" class="star" id="one" name="star_rating">
+		<input type="radio" class="star" id="two" name="star_rating">
+		<input type="radio" class="star" id="three" name="star_rating">
+		<input type="radio" class="star" id="four" name="star_rating">
+		<input type="radio" class="star" id="five" name="star_rating" checked>
+	</div>
+</div>
+
 
 <p>Estilo boteco tradicional do Mercado Central de BH.
      Não há lugar para se sentar, então é preciso se apertar no corredor do Mercado Central
@@ -132,4 +199,5 @@
 </section>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
