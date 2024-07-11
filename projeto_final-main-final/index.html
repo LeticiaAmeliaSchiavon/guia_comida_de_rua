@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Guia: Comida de rua</title>
+</head>
+
+<body>
+
+    <!-- Início - Menu de navegação -->
+
+    <header class="menu">
+        <a href="index.html"><img src="imagem/logo.png" alt="" class="logoMenu"></a>
+
+        <label for="menu-toggle" class="menu-sanduiche">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="paginas">
+            <a href="lugares.html">Lugares</a>
+            <a href="cardapio-torresmo.html">Cardápios</a>
+            <a href="contato.html">Fale conosco</a>
+        </nav>
+    </header>
+
+    <!-- Final - Menu de navegação -->
+
+    <!-- Início - Sobre o site -->
+
+    <section class="intro">
+        <div class="img-intro">
+            <img src="imagem/Group 2.png" alt="Imagem de introdução">
+        </div>
+        <div class="intro-texto">
+            <h4>A comida de rua está nas esquinas, calçadas, praças e largos. Povoa a memória, estabelece encontros,
+                resiste aos esforços de ordem, controle e padronização que se apresentam sobre a cidade.
+                Ela está nos carrinhos, tabuleiros, bicicletas, bancas e cestos.
+                Em pontos fixos dos bairros onde pode ser encontrada cotidianamente, ou com vendedores
+                ambulantes que tangenciam o caminho dos passantes. Tem comida de rua pra qualquer hora do dia.
+                Seja para um café da manhã reforçado, para merenda (lanches ao longo do dia),
+                para almoço ou para matar a fome no meio da madrugada. A diversidade é enorme. As delícias são muitas.
+                Um universo inteiro a ser experimentado.
+            </h4>
+        </div>
+        <div class="imagens-row">
+            <img src="imagem/image 60.png" alt="Imagem 60">
+            <img src="imagem/image 62.png" alt="Imagem 62">
+            <img src="imagem/image 61.png" alt="Imagem 61">
+
+        </div>
+        <div class="intro-texto">
+            <h4>Este guia não pretende nem de longe tentar esgotar o tema da comida de rua,
+                mas sim reunir neste pequeno impresso uma amostra de toda a variedade que se
+                pode encontrar percorrendo a cidade.
+            </h4>
+        </div>
+    </section>
+
+    <!-- Início - Destaque da semana -->
+
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="p-5 mb-4 rounded-3" style="background-color: #03263d;">
+                    <div class="container-fluid py-5 d-flex align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/batata-logo.png" alt="">
+                            </h1>
+                            <p class="col-md-8 fs-4">Uma batata frita que já se tornou um verdadeiro patrimônio do
+                                subúrbio carioca.
+                                Moreira começou o negócio em 1987, com apenas R$ 8. Foi o valor inicial que ele usou
+                                para comprar as primeiras batatas para fritar e vender,
+                                conforme contou ao G1 em 2017. Antes, ele já tinha tentado empreender com barracas de
+                                pipoca,
+                                cachorro-quente e milho-verde, mas foi a batata frita que garantiu sucesso ao
+                                empreendedor.</p>
+                            <button class="btn btn-primary btn-lg" type="button">Batata de Marechal</button>
+                        </div>
+                        <div class="image-content">
+                            <img src="imagem/batatademarechal.png" class="img-fluid rounded" alt="Batata de Marechal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="p-5 mb-4 rounded-3" style="background-color: #03263d;">
+                    <div class="container-fluid py-5 d-flex align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/porquinho.png" alt="">
+                            </h1>
+                            <p class="col-md-8 fs-4">Fundado em 1983, o bar do Cardoso é boteco raiz. Na entrada,
+                                caricaturas que definem perfeitamente o dono, um homem simples que batalhou durante toda
+                                a vida para proporcionar melhores condições aos filhos e a esposa que faleceu há seis
+                                anos. Ao entrar no bar, percebe-se que a alegria de estar ali é contagiante, pois todos
+                                os colaboradores,
+                                ou mesmo familiares, estão sempre rindo ou tirando uma onda com alguém.</p>
+                            <button class="btn btn-primary btn-lg" type="button">Rei do Torresmo</button>
+                        </div>
+                        <div class="image-content">
+                            <img src="imagem/o-nosso-torresmo-de-barriga 1 (1).png" class="img-fluid rounded"
+                                alt="Outro Destaque">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Final - Destaque da semana -->
+
+    <!-- Início - Apresentação dos lugares -->
+    <section class="indexlugares">
+        <div class="container">
+
+            <div>
+                <h1 class="lugarestext">Lugares</h1>
+            </div>
+
+            <div class="lugares-todo row">
+
+                <!-- Card Batata  -->
+                <div class="lugares-cont col-md-4">
+                    <img src="imagem/marechal.png" alt="">
+                    <div>
+                        <div class="tituloLugares">
+                            <a href="lugares.html">Batata de Marechal</a>
+                        </div>
+
+                        <p> Uma batata frita que já se tornou um verdadeiro patrimônio do subúrbio carioca</p>
+                    </div>
+                </div>
+
+                <!-- Card Cachorro quente -->
+                <div class="lugares-cont col-md-4">
+                    <img src="imagem/cachorro-oliveira.png" alt="">
+                    <div>
+                        <div class="tituloLugares">
+                            <a href="lugares.html">Cachorro quente Oliveira</a>
+                        </div>
+
+                        <p> Oliveira Ferreira da Silva jura ter sido o pioneiro na utilizição do milho, da ervilha e da
+                            batata palha no chorro quente</p>
+                    </div>
+                </div>
+
+                <!-- Card Batata Torresmo -->
+                <div class="lugares-cont col-md-4">
+                    <img src="imagem/rei-do-torresmo.png" alt="">
+                    <div>
+                        <div class="tituloLugares">
+                            <a href="lugares.html">Rei do torresmo</a>
+                        </div>
+
+                        <p>O estabelecimento está localizado no histórico Mercado Central e, naturalmente, exala uma
+                            atmosfera rica em tradição cultural e variedade.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Final - Apresentação dos lugares -->
+
+    <!-- Início - Ícones de comida -->
+
+    <section id="tipos-de-pratos" class="text-center py-5 bg-light">
+        <h2>Tipos de pratos</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="imagem/cachorro-png.png" alt="Cachorro Quente" class="img-fluid">
+                    <h3>Cachorro Quente</h3>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="imagem/hamburger-png.png" alt="Hambúrguer" class="img-fluid">
+                    <h3>Hambúrguer</h3>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="imagem/batata-logo.png" alt="Batata frita" class="img-fluid">
+                    <h3>Batata frita</h3>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="imagem/image 28.png" alt="Espetinho" class="img-fluid">
+                    <h3>Espetinho</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final - Ícones de comida -->
+
+    <!-- Início - Avaliação dos lugares -->
+    <section>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="p-5 mb-4 rounded-3">
+                        <div class="avaliacao container-fluid py-5 d-flex align-items-center">
+                            <div class="avaliacaoText text-content">
+
+                                <!-- Estrelas de avaliação -->
+                                <div class="star-group">
+                                    <input type="radio" class="star" id="one" name="star_rating">
+                                    <input type="radio" class="star" id="two" name="star_rating">
+                                    <input type="radio" class="star" id="three" name="star_rating">
+                                    <input type="radio" class="star" id="four" name="star_rating">
+                                    <input type="radio" class="star" id="five" name="star_rating" checked>
+                                </div>
+
+                                <h1 class="display-5 fw-bold">Rei do Torremos</h1>
+
+                                <div>
+                                    <h2>Avaliação</h2>
+                                </div>
+
+                                <p class="col-md-8 fs-4">Estilo boteco tradicional do Mercado Central de BH.
+                                    Não há lugar para se sentar, então é preciso se apertar no corredor do Mercado
+                                    Central
+                                    e achar um cantinho no balcão para deixar sua garrafa de cerveja e sua porção de
+                                    torresmo.
+                                    Recomendo a porção de torresmo de barriga com mandioca frita.</p>
+                            </div>
+                            <div class="image-content">
+                                <img src="imagem/o-nosso-torresmo-de-barriga 1 (1).png" class="img-fluid rounded"
+                                    alt="Batata de Marechal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-5 mb-4 rounded-3">
+                        <div class="avaliacao container-fluid py-5 d-flex align-items-center">
+                            <div class="avaliacaoText text-content">
+
+                                <!-- Estrelas de avaliação -->
+                                <div class="star-group">
+                                    <input type="radio" class="star" id="one" name="star_rating">
+                                    <input type="radio" class="star" id="two" name="star_rating">
+                                    <input type="radio" class="star" id="three" name="star_rating">
+                                    <input type="radio" class="star" id="four" name="star_rating">
+                                    <input type="radio" class="star" id="five" name="star_rating" checked>
+                                </div>
+
+                                <h1 class="display-5 fw-bold">Cachorro quente Oliveira</h1>
+
+                                <div>
+                                    <h2>Avaliação</h2>
+                                </div>
+
+                                <p class="col-md-8 fs-4">Muito comentado esse cachorro quente e pedimos pelo Ifood para
+                                    experimentar pela primeira vez e
+                                    sinceramente não surpreendeu. Chegou frio, pão meio duro e seco, sem molho, sem
+                                    sabor. Não enviam sachê de molho nenhum e sequer guardanapos. Resumindo, um cachorro
+                                    quente “ok” nada demais “água de salsicha”.</p>
+                            </div>
+                            <div class="image-content">
+                                <img src="imagem/cachorro-oliveira.png" class="img-fluid rounded"
+                                    alt="Batata de Marechal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Final - Avaliação dos lugares -->
+
+    <!-- Rodapé -->
+    <section>
+        <footer>
+            <p>Copyright © 2024| Todos os direitos reservados</p>
+        </footer>
+    </section>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
