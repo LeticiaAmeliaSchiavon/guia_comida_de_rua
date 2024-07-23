@@ -84,61 +84,47 @@ footer {
   background-color: #03263d;
   text-align: center;
   color: white;
-  height: 50px;
+  height: 90px;
+  padding: 30px;
 }
+
+/* LUGARES HTML */
 
 /* LUGARES HTML */
 
 .section-lugares {
   margin-left: 20px;
-}
-
-.descricao-nome {
-  color: #e54b25;
+ }
+ 
+ .descricao-nome {
+  color: hashtag#e54b25;
   font-size: 32px;
-}
-
-.container-lugar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header "
-    "conteudo conteudo foto"
-    "footer  footer footer"
-    "button button button";
-
-  gap: 10px;
-}
-
-.descricao-nome {
-  grid-area: header;
-}
-
-.descricao-lugar {
-  grid-area: conteudo;
-}
-
-.img-lugar {
-  grid-area: foto;
-  margin-left: 50px;
-  width: 500px;
-}
-
-.img-lugar.torresmo img {
-  width: 760px !important;
-  height: 604px !important;
-}
-
-.quero {
-  grid-area: button;
-  justify-self: center;
-  margin-bottom: 50px;
-}
-
-.quero button {
-  background-color: #f2cb15;
-  color: rgb(255, 255, 255);
+ }
+ 
+ .img-lugar img {
+  width: 100%;
+  height: auto; /* Preserve the aspect ratio */
+  object-fit: cover; /* Make the image cover the available space */
+  border-radius: 10px;
+ }
+ 
+ .img-lugar.torresmo img {
+  width: 100% !important;
+  height: auto !important;
+ }
+ 
+ .col-custom {
+  max-width: 1500px; /* Ajuste conforme necessário */
+ }
+ 
+ .quero {
+  text-align: center;
+  margin-top: 20px;
+ }
+ 
+ .quero button {
+  background-color: hashtag#f2cb15;
+  color: hashtag#fff;
   border: none;
   padding: 10px 20px;
   text-decoration: none;
@@ -147,17 +133,96 @@ footer {
   font-size: 15px;
   font-weight: bold;
   border-radius: 4%;
-}
-
-.quero button:hover {
+ }
+ 
+ .quero button:hover {
   background-color: orange;
-}
-
-.imagelinha img {
+ }
+ 
+ .imagelinha img {
   width: 100%;
-}
+ }
+ 
+ .texto-lugares {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 3.6%;
+  padding-top: 2%;
+ }
+
+ /* CARDAPIO */
+ .imagens-cardapios img {
+  width: 80%;
+  height: auto; 
+  object-fit: cover;
+  max-width: 100%; 
+  border-radius: 10px;
+ }
+
+ .custom-cardapio {
+  position: relative;
+  left: 30px; 
+  width: 95%;
+ }
+ 
+ .cardapio{
+  margin-top: 20px;
+ }
+
+ .item-cardapio{
+  margin-left: 1o0px;
+ }
+
+ .cardapio-item {
+  margin-top: 30px;
+ }
+ 
+ .container-cardapio {
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .left-column {
+  width: 50%;
+ }
+ 
+ .right-column {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+ }
+ 
+ 
+ .imagens-cardapios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ }
+ 
+ .imagens-cardapios .col {
+  flex: 1 1 50%;
+  padding: 5px;
+ }
+ 
+ .imagens-cardapios img {
+  max-width: 100%;
+  height: auto;
+ }
 
 /* CARDAPIO */
+.imagens-cardapios img {
+  width: 100%;
+  height: auto; /* Preserve the aspect ratio */
+  object-fit: cover; /* Make the image cover the available space */
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  border-radius: 10px;
+}
+.custom-cardapio {
+  position: relative;
+  left: 30px; /* Ajuste este valor conforme necessário */
+}
+
 
 .cardapio-item {
   margin-top: 30px;
@@ -175,21 +240,25 @@ footer {
 .right-column {
   width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .imagens-cardapios {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagens-cardapios .col {
+  flex: 1 1 50%;
+  padding: 5px;
 }
 
 .imagens-cardapios img {
   max-width: 100%;
-  margin: 0;
+  height: auto;
 }
-
 /* -------------------------------------------------------------------------------------------- */
 
 * {
@@ -266,9 +335,17 @@ body {
   transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .menu-sanduiche {
     display: block;
+  }
+
+  .imagem {
+    display: none;
   }
 
   .paginas {
@@ -283,8 +360,20 @@ body {
     z-index: 1000;
   }
 
-  #menu-toggle:checked + .menu-sanduiche {
-    transform: rotate(90deg);
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-sanduiche span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked + .menu-sanduiche span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .menu-sanduiche span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 
   #menu-toggle:checked ~ .paginas {
@@ -361,7 +450,7 @@ body {
 
 .image-content {
   max-width: 40%;
-}
+} 
 
 .img-fluid {
   max-width: 100%;
@@ -446,7 +535,7 @@ section#tipos-de-pratos {
 section#tipos-de-pratos h2 {
   background-color: #03263d !important;
   color: #e54b25;
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 60px;
   font-weight: 800;
 }
@@ -461,12 +550,14 @@ section#tipos-de-pratos .col-md-3 {
 }
 
 section#tipos-de-pratos img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 100px;
+  height: 100px;
   display: block;
   margin: 0 auto 15px auto;
 }
+ #tipos-de-pratos{
+  height: 800px;
+ }
 
 /* AVALIAÇÃO */
 
@@ -692,7 +783,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -706,6 +797,45 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #fd9001;
+.footerContato{
+  margin-top: 180px;
+}
+
+/* ICONES */
+
+#batataDestaque{
+  width: 70px;
+  height: 100px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+#torresmoDestaque{
+  width: 100px;
+  height: 70px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+#batataCardapio{
+  width: 150px;
+  margin-top: 20px;
+}
+
+#cachorroCardapio{
+  width: 250px;
+  margin-top: 20px;
+}
+
+#porquinhoCardapio{
+  width: 250px;
+  margin-top: 50px;
+}
+
+.lugarCardapio{
+  margin-bottom: 10px;
+}
+
+.cardapio-item{
+  margin-left: 100px;
 }

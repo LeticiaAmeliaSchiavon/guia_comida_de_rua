@@ -22,22 +22,23 @@
 <body>
 
     <!-- Início - Menu de navegação -->
-
+     
     <header class="menu">
         <a href="index.html"><img src="imagem/logo.png" alt="" class="logoMenu"></a>
-
+        
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-sanduiche">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
-
+    
         <nav class="paginas">
-            <a href="lugares.html">Lugares</a>
-            <a href="cardapio-torresmo.html">Cardápios</a>
-            <a href="contato.html">Fale conosco</a>
+          <a href="lugares.html">Lugares</a>
+          <a href="cardapio-torresmo.html">Cardápios</a>
+          <a href="contato.html">Fale conosco</a>
         </nav>
-    </header>
+      </header>
 
     <!-- Final - Menu de navegação -->
 
@@ -81,7 +82,7 @@
                 <div class="p-5 mb-4 rounded-3" style="background-color: #03263d;">
                     <div class="container-fluid py-5 d-flex align-items-center">
                         <div class="text-content">
-                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/batata-logo.png" alt="">
+                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/batatafrita.png" id="batataDestaque" alt="">
                             </h1>
                             <p class="col-md-8 fs-4">Uma batata frita que já se tornou um verdadeiro patrimônio do
                                 subúrbio carioca.
@@ -104,7 +105,7 @@
                 <div class="p-5 mb-4 rounded-3" style="background-color: #03263d;">
                     <div class="container-fluid py-5 d-flex align-items-center">
                         <div class="text-content">
-                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/porquinho.png" alt="">
+                            <h1 class="display-5 fw-bold">Destaque da Semana! <img src="imagem/torresmo.png" id="torresmoDestaque" alt="">
                             </h1>
                             <p class="col-md-8 fs-4">Fundado em 1983, o bar do Cardoso é boteco raiz. Na entrada,
                                 caricaturas que definem perfeitamente o dono, um homem simples que batalhou durante toda
@@ -190,14 +191,14 @@
 
     <section id="tipos-de-pratos" class="text-center py-5 bg-light">
         <h2>Tipos de pratos</h2>
-        <div class="container">
+        <div class="container" id="tipoPratos">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
-                    <img src="imagem/cachorro-png.png" alt="Cachorro Quente" class="img-fluid">
+                    <img src="./imagem/cachorroquente2.png" alt="Cachorro Quente" class="img-fluid">
                     <h3>Cachorro Quente</h3>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
-                    <img src="imagem/hamburger-png.png" alt="Hambúrguer" class="img-fluid">
+                    <img src="imagem/hamburguer2.png" alt="Hambúrguer" class="img-fluid">
                     <h3>Hambúrguer</h3>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
@@ -205,7 +206,7 @@
                     <h3>Batata frita</h3>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3">
-                    <img src="imagem/image 28.png" alt="Espetinho" class="img-fluid">
+                    <img src="imagem/espetinho.png" alt="Espetinho" class="img-fluid">
                     <h3>Espetinho</h3>
                 </div>
             </div>
@@ -290,10 +291,6 @@
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
