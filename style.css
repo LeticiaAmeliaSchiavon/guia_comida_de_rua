@@ -94,35 +94,35 @@ footer {
 
 .section-lugares {
   margin-left: 20px;
- }
- 
- .descricao-nome {
+}
+
+.descricao-nome {
   color: hashtag#e54b25;
   font-size: 32px;
- }
- 
- .img-lugar img {
+}
+
+.img-lugar img {
   width: 100%;
   height: auto; /* Preserve the aspect ratio */
   object-fit: cover; /* Make the image cover the available space */
   border-radius: 10px;
- }
- 
- .img-lugar.torresmo img {
+}
+
+.img-lugar.torresmo img {
   width: 100% !important;
   height: auto !important;
- }
- 
- .col-custom {
+}
+
+.col-custom {
   max-width: 1500px; /* Ajuste conforme necessário */
- }
- 
- .quero {
+}
+
+.quero {
   text-align: center;
   margin-top: 20px;
- }
- 
- .quero button {
+}
+
+.quero button {
   background-color: hashtag#f2cb15;
   color: hashtag#fff;
   border: none;
@@ -133,82 +133,81 @@ footer {
   font-size: 15px;
   font-weight: bold;
   border-radius: 4%;
- }
- 
- .quero button:hover {
+}
+
+.quero button:hover {
   background-color: orange;
- }
- 
- .imagelinha img {
+}
+
+.imagelinha img {
   width: 100%;
- }
- 
- .texto-lugares {
+}
+
+.texto-lugares {
   text-align: center;
   margin-top: 30px;
   padding-bottom: 3.6%;
   padding-top: 2%;
- }
+}
 
- /* CARDAPIO */
- .imagens-cardapios img {
+/* CARDAPIO */
+.imagens-cardapios img {
   width: 80%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
-  max-width: 100%; 
+  max-width: 100%;
   border-radius: 10px;
- }
+}
 
- .custom-cardapio {
+.custom-cardapio {
   position: relative;
-  left: 30px; 
+  left: 30px;
   width: 95%;
- }
- 
- .cardapio{
+}
+
+.cardapio {
   margin-top: 20px;
- }
+}
 
- .item-cardapio{
+.item-cardapio {
   margin-left: 1o0px;
- }
+}
 
- .cardapio-item {
+.cardapio-item {
   margin-top: 30px;
- }
- 
- .container-cardapio {
+}
+
+.container-cardapio {
   display: flex;
   justify-content: space-between;
- }
- 
- .left-column {
+}
+
+.left-column {
   width: 50%;
- }
- 
- .right-column {
+}
+
+.right-column {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
- }
- 
- 
- .imagens-cardapios {
+}
+
+.imagens-cardapios {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
- }
- 
- .imagens-cardapios .col {
+}
+
+.imagens-cardapios .col {
   flex: 1 1 50%;
   padding: 5px;
- }
- 
- .imagens-cardapios img {
+}
+
+.imagens-cardapios img {
   max-width: 100%;
   height: auto;
- }
+}
 
 /* CARDAPIO */
 .imagens-cardapios img {
@@ -222,7 +221,6 @@ footer {
   position: relative;
   left: 30px; /* Ajuste este valor conforme necessário */
 }
-
 
 .cardapio-item {
   margin-top: 30px;
@@ -450,7 +448,7 @@ body {
 
 .image-content {
   max-width: 40%;
-} 
+}
 
 .img-fluid {
   max-width: 100%;
@@ -555,9 +553,9 @@ section#tipos-de-pratos img {
   display: block;
   margin: 0 auto 15px auto;
 }
- #tipos-de-pratos{
-  height: 800px;
- }
+#tipos-de-pratos {
+  height: 450px;
+}
 
 /* AVALIAÇÃO */
 
@@ -614,7 +612,7 @@ body {
 }
 .container {
   display: grid;
-  min-height: 100vh;
+  min-height: 300px;
   place-content: center;
 }
 .star-group {
@@ -739,10 +737,9 @@ body {
 .containerContato {
   display: flex;
   padding: 20px;
-  max-width: 900px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contato {
@@ -797,45 +794,57 @@ button {
   cursor: pointer;
 }
 
-.footerContato{
+.footerContato {
   margin-top: 180px;
 }
 
 /* ICONES */
 
-#batataDestaque{
+#batataDestaque {
   width: 70px;
   height: 100px;
   margin-left: 30px;
   margin-bottom: 20px;
 }
 
-#torresmoDestaque{
+#torresmoDestaque {
   width: 100px;
   height: 70px;
   margin-left: 30px;
   margin-bottom: 20px;
 }
 
-#batataCardapio{
+#batataCardapio {
   width: 150px;
   margin-top: 20px;
 }
 
-#cachorroCardapio{
+#cachorroCardapio {
   width: 250px;
   margin-top: 20px;
 }
 
-#porquinhoCardapio{
+#porquinhoCardapio {
   width: 250px;
   margin-top: 50px;
 }
 
-.lugarCardapio{
+.lugarCardapio {
   margin-bottom: 10px;
 }
 
-.cardapio-item{
+.cardapio-item {
   margin-left: 100px;
+}
+
+.fotoTorresmo {
+  margin-left: 25px;
+}
+
+.fotoCachorro {
+  margin-left: 90px;
+}
+
+.fotoBatata {
+  margin-left: 35px;
 }
